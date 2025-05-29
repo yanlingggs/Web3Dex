@@ -126,7 +126,7 @@ function Swap() {
         </Popover>
       </div>
       <div className="inputs">
-        <Input placeholder="0" value={tokenOneAmount} onChange={changeAmount}/>
+        <Input placeholder="0" value={tokenOneAmount} onChange={changeAmount} disabled={!prices}/>
         <Input placeholder="0" value={tokenTwoAmount} disabled={true}/>
         <div className='switchButton' onClick={switchTokens}>
           <ArrowDownOutlined className='switchArrow' />
